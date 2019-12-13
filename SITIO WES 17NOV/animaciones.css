@@ -1,0 +1,105 @@
+
+body{
+  
+
+}  
+.tamañofondo {
+   width:100%;
+   height:100%;
+
+} 
+.fondoerror{
+   position:absolute;
+   top:0px;
+   left:0px;
+   background: #bcd4de;
+   width:100%;
+   height:100%;
+
+}
+
+.nubes {
+   background-image: url("nubesentera.png");
+   background-repeat: repeat-x;
+   position:absolute;
+   width:100%;
+   height:100%;
+   animation-name: nubes;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;  
+}
+
+.mar {
+   background-image: url("mar.png");
+   background-repeat: repeat-x;
+   position:absolute;
+   width:100%;
+   height:767px;
+   bottom:0%;
+   animation-name: mar;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear; 
+   animation-direction:alternate-reverse; 
+}
+
+.chicafaro {
+   background-image: url("chicafaro.png");
+   position:absolute;
+   width:100%;
+   height:767px;
+   bottom:0%;
+   background-size:cover;
+ 
+}
+
+.texto {
+   position:absolute;
+   width:50%;
+   height:40%;
+   top:20%;
+   right:0%;
+ 
+}
+
+
+
+.inicioboton {
+    width: 10px;
+    position: absolute;
+    top:20%;
+    padding-right:20%;
+    padding-top:30%;
+    right:45%;
+
+}
+
+h1 {
+    font-family: impact;
+    color: #cca722;
+    text-align: right;
+    padding-right:20%;
+    padding-top:10%;
+    font-size:150%;
+}
+p {
+    font-family: brawler;
+    color: white;
+    text-shadow:2px 2px 2px black;
+    text-align: right;
+    padding-right:20%;
+    font-size:100%;
+}
+
+@keyframes nubes {
+   from{ background-position: 0 0;}
+   from{ background-position: 100% 0;}
+}
+
+@keyframes mar {
+   from{ background-position: 0 0;}
+   from{ background-position: 100% 0;}
+}
+
+ 

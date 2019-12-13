@@ -1,0 +1,185 @@
+@charset "UTF-8";
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+
+
+.quote {
+    animation-name: animacion1;
+    animation-duration: 3s;  
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    color: #000000;
+    font-family: brawler;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    font-size: 420%;
+
+}
+.quote {
+transition-duration: 3s;
+}
+
+.quote:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.quotewes {
+    animation-name: animacion1;
+    animation-duration: 3s;  
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    
+
+}
+.quotewes {
+transition-duration: 3s;
+}
+.quotewes:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.quotedirector {
+    animation-name: animacion1;
+    animation-duration: 3s;  
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    
+
+}
+.quotedirector {
+transition-duration: 3s;
+}
+.quotedirector:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.cuadrobio {
+
+	width: 100%;
+	padding-top: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+   
+}
+
+.respuesta {
+    animation-name: animacion1;
+    animation-duration: 3s;  
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+
+}
+.respuesta {
+transition-duration: 3s;
+}
+
+.respuesta:hover{
+    transform: scale(1.2, 1.2);
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgba(158,157,36 ,1);
+    font-family: IMPACT;
+    color:white;
+    padding:2%;
+   
+
+}
+
+
+
+#menu_on{
+	display: inline-block;
+	width:40px;
+	height: 30px;
+	position: fixed;
+	z-index: 2;
+	margin-top: 10%;
+	margin-left: 5%;
+
+
+}
+ 
+#menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: rgba(158,157,36 ,1);
+	transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	transform-origin : 0px 100%;
+	
+}
+ 
+#menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3){
+bottom: 0;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px; /* Escondemos nuestro menú con un valor negativo */ 
+	width: 300px;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: #ccc09c;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+	font-family: impact; 
+}
+
+nav a{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: rgba(255,255,255,0.75);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	transition: all ease 0.25s;
+}
+ 
+nav a:hover{
+	color: rgba(255,255,255,1);
+	border-bottom-color:rgba(255,255,255,0.4);
+}
+
+
+html {
+	scroll-behavior: smooth;
+	}
+
+.visible_menu span:nth-child(1){
+	transform: rotate(45deg) translate(-2px,1px); 
+}
+ 
+.visible_menu span:nth-child(2){
+	opacity: 0;
+}
+ 
+.visible_menu span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px,3px); 
+}
+
+
+
+.visible_menu nav{
+	left: 0;
+	opacity: 1;
+}
+
+
+
+.visible_menu #content{
+      transform: translateX(260px);
+}
